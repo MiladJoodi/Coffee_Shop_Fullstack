@@ -1,0 +1,199 @@
+@font-face {
+  font-family: shabnam;
+  src: url("/fonts/shabnam/Shabnam-Medium.woff");
+}
+
+@font-face {
+  font-family: shabnam-Bold;
+  src: url("/fonts/shabnam/Shabnam-Bold.woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: shabnam;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+  background-color: #fff !important;
+  border-radius: 6px !important;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #711d1c !important;
+}
+
+html,
+body {
+  max-width: 100vw;
+}
+
+body {
+  background: white;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+/* swiper */
+.mySwiper .swiper-button-prev:after,
+.mySwiper .swiper-button-next:after {
+  font-size: 26px !important;
+  color: #070707 !important;
+  font-weight: 1000;
+}
+
+.home-slider .swiper-button-prev:after,
+.home-slider .swiper-button-next:after {
+  font-size: 14px !important;
+  color: #070707 !important;
+  font-weight: 1000;
+}
+
+.home-slider img {
+  position: relative;
+  right: 1px;
+}
+
+.gallery-slider .swiper-button-prev:after,
+.gallery-slider .swiper-button-next:after {
+  font-size: 26px !important;
+  color: #070707 !important;
+  font-weight: 1000;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-slider-2 {
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-slider-2 .swiper-slide {
+  opacity: 0.4;
+}
+
+.gallery-slider-2 .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.articles_slider .swiper-button-prev,
+.articles_slider .swiper-button-next {
+  opacity: 0;
+}
+
+.articles_slider:hover .swiper-button-prev,
+.articles_slider:hover .swiper-button-next {
+  opacity: 1;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+}
+
+/* swal */
+.swal-footer {
+  text-align: center;
+}
+
+.swal-modal {
+  background: #ffffff !important;
+  border: 1px solid #711d1c;
+}
+
+.swal-title {
+  color: #000000 !important;
+}
+
+.swal-button--confirm {
+  background: #fff;
+  color: #711d1c;
+}
+
+.swal-content__input:focus,
+.swal-content__textarea:focus {
+  outline: none;
+  border-color: #711d1c !important;
+}
+
+.swal-button:not([disabled]):hover {
+  box-shadow: none !important;
+}
+
+.swal-button--cancel:hover {
+  background-color: #efefef !important;
+}
+
+.swal-button--confirm {
+  box-shadow: none !important;
+  background: #e9e5e5 !important;
+}
+
+.swal-content__input {
+  color: black !important;
+}
+
+.swal-button:focus {
+  box-shadow: none !important;
+}
+
+/* charts */
+.yAxis .recharts-cartesian-axis-tick-value {
+  text-anchor: start !important;
+}
+
+.css-13cymwt-control,
+.css-16xfy0z-control {
+  height: 51px;
+  margin-top: 0.3rem;
+}
+
+/* leaflet */
+
+.leaflet-control-attribution {
+  display: none !important;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png) !important;
+}
+
+.leaflet-top {
+  right: 12px !important;
+  bottom: 12px !important;
+  left: unset !important;
+  top: unset !important;
+}
