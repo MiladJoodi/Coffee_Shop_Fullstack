@@ -1,0 +1,122 @@
+.card {
+  width: 100%;
+  direction: rtl;
+  position: relative;
+  padding-top: 19px;
+  color: black;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: center;
+  padding-top: 5px;
+  justify-content: center;
+}
+.details svg {
+  color: orange;
+}
+.details div {
+  direction: ltr;
+}
+.details_container:hover img {
+  transform: scale(1.1);
+}
+.details_container img {
+  transition: 0.4s all ease-in;
+}
+.card img {
+  width: 100%;
+  height: 312px;
+}
+.card span {
+  color: rgb(52, 24, 14);
+}
+.details_container {
+  position: relative;
+  margin-top: 5px;
+}
+.details_container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.details_container:hover::before {
+  opacity: 1;
+}
+.details_container:hover button {
+  visibility: visible;
+  left: 50%;
+  bottom: 50%;
+  height: max-content;
+  transform: translate(-50%, 50%);
+}
+.details_container:hover .icons {
+  visibility: visible;
+  left: 10px;
+}
+.icons svg {
+  cursor: pointer;
+}
+.icons {
+  top: 10px;
+  left: 0;
+  color: white;
+  transition: all 0.25s ease;
+  font-size: 2rem;
+  display: grid;
+  gap: 10px;
+  z-index: 3;
+  position: absolute;
+  visibility: hidden;
+  background-color: transparent;
+}
+.details_container button {
+  cursor: pointer;
+  padding: 0.4rem 0.7rem;
+  bottom: 0;
+  transition: all 0.25s ease;
+  z-index: 3;
+  background: transparent;
+  left: 120px;
+  position: absolute;
+  visibility: hidden;
+  color: white;
+  width: max-content;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.icons a,
+.icons div {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 4px;
+}
+.tooltip {
+  font-size: 10px !important;
+  align-items: center;
+  opacity: 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0 12px;
+  white-space: nowrap;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 34px;
+  position: relative;
+}
+
+.icons a:hover .tooltip,
+.icons div:hover .tooltip {
+  opacity: 1;
+}

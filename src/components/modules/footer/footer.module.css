@@ -1,0 +1,96 @@
+.description {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  align-items: center;
+}
+.descriptions {
+  width: 300px;
+  padding: 10px;
+  font-family: shabnam;
+  font-size: 15px;
+  direction: rtl;
+}
+.description:nth-child(3) p {
+  font-size: 15px;
+}
+.descriptions_title {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.footer main {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.footer {
+  background-color: rgb(17, 17, 17);
+  padding-top: 40px;
+}
+.footer_article div div {
+  display: flex;
+  justify-content: right;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 0.5rem;
+}
+.footer_article {
+  font-family: shabnam;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  flex-direction: row-reverse;
+  margin: 20px 0px;
+}
+.footer_article_title {
+  font-family: shabnam-Bold;
+}
+.footer h4 {
+  margin-bottom: 15px;
+  font-family: shabnam-Bold;
+}
+.links li {
+  list-style: none;
+  margin-top: 10px;
+  font-family: shabnam;
+  color: rgba(255, 255, 255, 0.5);
+}
+.links {
+  display: flex;
+  gap: 80px;
+  margin-right: 1rem;
+}
+
+.licenses img:nth-child(4) {
+  margin-left: 1rem;
+}
+.licenses img {
+  cursor: pointer;
+}
+.licenses {
+  height: 200px;
+  gap: 10px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.copyRight {
+  font-family: shabnam;
+  direction: rtl;
+  padding: 20px 0px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.footer hr {
+  border-color: #676767;
+}
+.copyRight svg {
+  position: relative;
+  top: 3.9px;
+  right: 1px;
+  font-size: 1.3rem;
+}

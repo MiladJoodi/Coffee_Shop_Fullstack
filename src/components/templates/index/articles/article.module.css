@@ -1,0 +1,141 @@
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.date span:nth-child(1) {
+  font-size: 20px;
+}
+
+.date {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 0.3rem 0.5rem;
+  background: white;
+  display: grid;
+  border-radius: 4px;
+  color: black;
+}
+
+.details div img {
+  width: 20px;
+  border-radius: 20px;
+}
+
+.details div div span {
+  position: absolute;
+  font-size: 7px;
+  top: -5px;
+  left: -4px;
+  border-radius: 100%;
+  padding: 0.1rem 0.2rem 0;
+  background-color: rgb(52, 24, 14);
+}
+.details div div {
+  position: relative;
+}
+.details div svg {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.details div {
+  font-size: 14px;
+  color: gray;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.details {
+  width: 100%;
+  text-align: center;
+  transition: box-shadow 0.6s ease;
+  padding: 25px;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    transparent 5%,
+    rgba(0, 0, 0, 0.35) 50%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  bottom: 0px;
+}
+
+.tag {
+  font-size: 13px;
+  background-color: rgb(52, 24, 14);
+  padding: 0.5rem;
+  border-radius: 3px;
+}
+
+.title {
+  word-wrap: break-word;
+  margin: 10px 0;
+  line-height: 1.4;
+  display: block;
+  font-size: 23px;
+}
+
+.card:hover .img_container:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.7s ease;
+}
+
+.card:hover .img_container:nth-child(1) {
+  transform: scale(1.03);
+}
+
+.card .img_container:nth-child(1) {
+  position: relative;
+  display: block;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  overflow: hidden;
+}
+.share {
+  position: relative;
+  bottom: 2px;
+}
+.share:hover .tooltip {
+  opacity: 1;
+}
+
+.tooltip svg {
+  font-size: 1rem !important;
+}
+.tooltip {
+  position: absolute !important;
+  top: -35px;
+  background-color: black;
+  padding: 0.3rem 0.3rem 0;
+  border-radius: 4px;
+  z-index: 999;
+  opacity: 0;
+  color: white !important;
+  display: flex;
+  gap: 5px;
+}
+
+.tooltip::before {
+  left: 50%;
+  content: "";
+  top: 100%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000 !important;
+}
+.tooltip::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent;
+}

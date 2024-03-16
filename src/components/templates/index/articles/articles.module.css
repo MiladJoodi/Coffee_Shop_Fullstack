@@ -1,0 +1,18 @@
+.title {
+  color: #114639;
+  font-size: 36px;
+}
+
+.description {
+  color: gray;
+}
+
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+  direction: rtl;
+}
+
+.container main {
+  margin: 40px 0 90px;
+}

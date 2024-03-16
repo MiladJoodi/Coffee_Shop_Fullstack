@@ -1,0 +1,23 @@
+.article div div {
+  display: flex;
+  justify-content: right;
+  gap: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-top: 0.5rem;
+}
+.article {
+  font-family: shabnam;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  flex-direction: row-reverse;
+  margin: 20px 0px;
+}
+.title {
+  font-family: shabnam-Bold;
+}
+.footer h4 {
+  margin-bottom: 15px;
+  font-family: shabnam-Bold;
+}

@@ -1,0 +1,36 @@
+.container {
+  max-width: 1222px;
+  margin: 0 auto;
+}
+
+.title {
+  color: black;
+  flex-direction: row-reverse;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  text-align: center;
+  font-family: shabnam;
+  margin-top: 1.7rem;
+  align-items: center;
+}
+.title p {
+  color: #114639;
+  font-size: 36px;
+}
+.title span {
+  color: gray;
+}
+.link {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 9px;
+}
+.products {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 30px;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
