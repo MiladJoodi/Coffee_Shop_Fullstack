@@ -1,0 +1,68 @@
+.btn {
+  padding: 0.8rem;
+  cursor: pointer;
+  font-family: shabnam;
+  background-color: rgb(52, 24, 14);
+}
+
+.form {
+  display: grid;
+  background-color: white;
+  padding: 50px 95px;
+  width: 380px;
+  font-family: shabnam;
+  margin: 7rem auto 2rem;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  color: black;
+}
+
+.input {
+  font-family: shabnam;
+  padding: 13px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid black;
+  direction: ltr;
+  margin-top: 20px;
+}
+.back_to_login {
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.code_title {
+  font-size: 13px;
+  margin-top: 18px;
+  color: #6d6d6d;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+.number {
+  font-size: 13px;
+  margin-top: 7px;
+  color: #6d6d6d;
+  opacity: 0.6;
+  white-space: nowrap;
+}
+.send_again_code {
+  font-size: 13px;
+  margin-top: 7px;
+  opacity: 0.6;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.redirect_to_home {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: shabnam;
+  font-size: 13px;
+  color: rgb(52, 24, 14);
+}

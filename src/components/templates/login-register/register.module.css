@@ -1,0 +1,71 @@
+.form {
+  display: grid;
+  background-color: white;
+  padding: 10px 25px;
+  width: 380px;
+  font-family: shabnam;
+  margin: 7rem auto 2rem;
+  border-radius: 4px;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  color: black;
+}
+
+.input {
+  font-family: shabnam;
+  padding: 13px;
+  background-color: white;
+  color: black;
+  border-radius: 3px;
+  border: 1px solid black;
+  direction: rtl;
+  margin-top: 20px;
+}
+
+.btn_light {
+  color: rgb(109, 109, 109);
+  border: 1px solid rgb(214, 214, 214);
+  margin-bottom: 3rem;
+  cursor: pointer;
+  padding: 1rem;
+  font-family: shabnam;
+  background: rgb(242, 242, 242);
+}
+
+.btn {
+  padding: 0.8rem;
+  cursor: pointer;
+  color: white !important;
+  font-family: shabnam;
+  background-color: rgb(52, 24, 14);
+}
+
+.forgot_pass {
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.form span {
+  text-align: right;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.back_to_login {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 1rem;
+  cursor: pointer;
+  margin-bottom: 3rem;
+}
+
+.redirect_to_home {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: shabnam;
+  font-size: 13px;
+  color: rgb(52, 24, 14);
+}

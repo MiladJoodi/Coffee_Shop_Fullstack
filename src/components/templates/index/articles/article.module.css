@@ -76,8 +76,6 @@
   line-height: 1.4;
   display: block;
   font-size: 23px;
-  color: #fff;
-
 }
 
 .card:hover .img_container:nth-child(1)::after {

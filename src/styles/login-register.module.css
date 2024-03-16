@@ -1,0 +1,19 @@
+.login_register {
+  height: 100vh;
+  overflow: hidden;
+  width: 100%;
+  background: linear-gradient(rgb(237, 230, 234), rgb(237, 230, 234));
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+
+.form_bg {
+  width: 50%;
+}
+
+.login_register section {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(52, 24, 14);
+}
