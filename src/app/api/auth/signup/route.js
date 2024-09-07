@@ -1,26 +1,27 @@
-import { hashPassword } from "@/utils/auth";
-import connectToDB from "../../../../../configs/db";
+import connectToDB from "@/configs/db";
 import UserModel from "@/models/User";
+import { generateAccessToken, hashPassword } from "@/utils/auth";
 import { roles } from "@/utils/constants";
 
-export async function GET(req) {
-  await connectToDB();
-
+export async function POST(req) {
+  connectToDB();
   const body = await req.json();
   const { name, phone, email, password } = body;
 
-  // Start Validation
+  // Validation
 
   const isUserExist = await UserModel.findOne({
-    $or: [{ name }, { email }, [{ phone }]],
+    $or: [{ name }, { email }, { phone }],
   });
 
   if (isUserExist) {
     return Response.json(
       {
-        message: "The username or email or name is already",
+        message: "The username or email or phone exist already !!",
       },
-      { status: 422 }
+      {
+        status: 422,
+      }
     );
   }
 
@@ -37,5 +38,11 @@ export async function GET(req) {
     role: users.length > 0 ? roles.USER : roles.ADMIN,
   });
 
-  return Response.json({ message: "Success Response" }, { status: 201 });
+  return Response.json(
+    { message: "User signed up successfully :))" },
+    {
+      status: 201,
+      headers: { "Set-Cookie": `token=${accessToken};path=/;httpOnly=true` },
+    }
+  );
 }
