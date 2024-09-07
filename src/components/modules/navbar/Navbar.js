@@ -51,9 +51,9 @@ function Navbar() {
           <li>
             <Link href="/rules">قوانین</Link>
           </li>
-          {/* <li>
+          <li>
             <Link href="/login-register">ورود / عضویت</Link>
-          </li> */}
+          </li>
 
           {/* Start My-account section */}
           <div className={styles.dropdown}>

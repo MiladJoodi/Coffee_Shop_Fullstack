@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
 import styles from "@/styles/ScrollToTop.module.css";
